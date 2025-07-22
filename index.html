@@ -19,27 +19,33 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- 🔧 Mobile Fixes -->
-    <style>
-      @media only screen and (max-width: 768px) {
-        .js-fullheight {
-          height: auto !important;
-          min-height: 100vh;
-        }
+   <style>
+		@media only screen and (max-width: 768px) {
+			.js-fullheight,
+			.home-slider,
+			.slider-item,
+			.slider-text {
+			height: auto !important;
+			min-height: 100vh !important;
+			overflow: visible !important;
+			}
 
-        .home-slider {
-          overflow-x: hidden;
-          overflow-y: auto;
-        }
+			.home-slider {
+			overflow-x: hidden !important;
+			overflow-y: visible !important;
+			touch-action: auto !important;
+			}
 
-        html, body {
-          overflow-x: hidden;
-        }
+			html, body {
+			overflow-x: hidden !important;
+			}
 
-        body {
-          -webkit-overflow-scrolling: touch;
-        }
-      }
-    </style>
+			body {
+			-webkit-overflow-scrolling: touch;
+			}
+		}
+	</style>
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
